@@ -1,0 +1,26 @@
+{
+    "name": "rhernandez/delamancha",
+    "description": "Proyecto de pagina web para el gurpo cultural de de la mancha",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ramon Hernandez",
+            "email": "ramonhdez3195@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+
+    "require": {
+		"php": ">=7.0.0",
+        "illuminate/database": "5.8.19",
+		"phpmailer/phpmailer": "6.0.7",
+		"gregwar/captcha": "1.1.7",
+        "psr/log": "^1.1",
+        "monolog/monolog": "^1.24"
+    }
+}
