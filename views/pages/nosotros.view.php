@@ -1,3 +1,6 @@
+<?php
+ $title = "Nosotros";
+?>
 <?php include APP_PATH . '/views/partials/head.view.php' ?>
 <?php include APP_PATH . '/views/partials/header.view.php' ?>
   
@@ -17,24 +20,44 @@
             </p>
         </div>
         
-        <div class="s-content__main mb-5" id="col6">
-          <div class="row my-4">
-            <div class="col-6 text-justify">
-              <h3 id="h3-small">MISIÓN</h3>
+        <div class="s-content__main mb-5">
+          <div class="row my-3">
+            <div class="col-6 text-justify" id="col6">
+              <h3 id="h3-small">Misión</h3>
               <p class="res">Generar alianzas y estrategias con los distintos sectores organizacionales (gubernamentales, privados y no lucrativos) que contribuyan al desarrollo social y político a través de proyectos e iniciativas culturales, donde se involucre a los diversos sectores de a sociedad.
               </p>
             </div>
 
-            <div class="col-6 text-justify">
-              <h3 id="h3-small">VISIÓN</h3>
+            <div class="col-12 text-justify" id="col12">
+              <h3 id="h3-small">Misión</h3>
+              <p class="res">Generar alianzas y estrategias con los distintos sectores organizacionales (gubernamentales, privados y no lucrativos) que contribuyan al desarrollo social y político a través de proyectos e iniciativas culturales, donde se involucre a los diversos sectores de a sociedad.
+              </p>
+            </div>
+
+            <div class="col-6 text-justify" id="col6">
+              <h3 id="h3-small">Visión</h3>
+              <p class="res">Posicionarse y consolidarse como empresa cultural, ser de los principales productores y creadores en la escena Nacional e Internacional.
+              </p>
+            </div>
+
+            <div class="col-12 text-justify my-3" id="col12" >
+              <h3 id="h3-small">Visión</h3>
               <p class="res">Posicionarse y consolidarse como empresa cultural, ser de los principales productores y creadores en la escena Nacional e Internacional.
               </p>
             </div>
           </div>
         
-          <div class="row my-4">
+          <div class="row my-3">
             <div class="col-6 text-justify" id="col6">
-              <h3 id="h3-small">POLITICAS</h3>
+              <h3 id="h3-small">Politicas</h3>
+                <ul>
+                  <li>No utilizar el nombre de la asociación con fines partidistas o electorales.</li>
+                  <li>Ser una asociación socialmente responsable.</li>
+                </ul>  
+            </div>
+
+            <div class="col-12 text-justify" id="col12">
+              <h3 id="h3-small">Politicas</h3>
                 <ul>
                   <li>No utilizar el nombre de la asociación con fines partidistas o electorales.</li>
                   <li>Ser una asociación socialmente responsable.</li>
@@ -42,7 +65,7 @@
             </div>
 
             <div class="col-6 text-justify" id="col6">
-              <h3 id="h3-small">¿QUÉ OFRECEMOS?</h3>
+              <h3 id="h3-small">¿Qué ofrecemos?</h3>
               <div id="accordion">
                 <div class="card">
                   <div class="card-header">
@@ -57,7 +80,7 @@
                   </div>
                 </div>
 
-                <div class="card" id="col6">
+                <div class="card">
                   <div class="card-header">
                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseProduc">
                       Producciones de festivales y eventos culturales
@@ -70,7 +93,7 @@
                   </div>
                 </div>
 
-                <div class="card" id="col6">
+                <div class="card">
                   <div class="card-header">
                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseCapaci">
                       Capacitación artística
@@ -83,7 +106,7 @@
                   </div>
                 </div>
 
-                <div class="card" id="col6">
+                <div class="card">
                   <div class="card-header">
                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseMaster">
                       Masterización de discos
@@ -96,7 +119,7 @@
                   </div>
                 </div>
 
-                <div class="card" id="col6">
+                <div class="card">
                   <div class="card-header">
                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseRenta">
                       Renta de audio e iluminación
@@ -110,11 +133,195 @@
                 </div>
               </div>
             </div>
+
+            <div class="col-12 text-justify my-3" id="col12">
+              <h3 id="h3-small">¿Qué ofrecemos?</h3>
+              <div id="accordion12">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseTeatro">
+                      Teatro y Música
+                    </a>
+                  </div>
+                  <div id="collapseTeatro" class="collapse" data-parent="#accordion12">
+                    <div class="card-body" id="card-bodyAcor">
+                      Lorem ipsum..
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseProduc">
+                      Producciones de festivales y eventos culturales
+                    </a>
+                  </div>
+                  <div id="collapseProduc" class="collapse" data-parent="#accordion12">
+                    <div class="card-body" id="card-bodyAcor">
+                      Lorem ipsum..
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseCapaci">
+                      Capacitación artística
+                    </a>
+                  </div>
+                  <div id="collapseCapaci" class="collapse" data-parent="#accordion12">
+                    <div class="card-body" id="card-bodyAcor">
+                      Lorem ipsum..
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseMaster">
+                      Masterización de discos
+                    </a>
+                  </div>
+                  <div id="collapseMaster" class="collapse" data-parent="#accordion12">
+                    <div class="card-body" id="card-bodyAcor">
+                      Lorem ipsum..
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseRenta">
+                      Renta de audio e iluminación
+                    </a>
+                  </div>
+                  <div id="collapseRenta" class="collapse" data-parent="#accordion12">
+                    <div class="card-body" id="card-bodyAcor">
+                      Lorem ipsum..
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                      <a class="card-link"  data-toggle="collapse" href="#collapseTaller">
+                        Talleres
+                      </a>
+                    </div>
+                    <div id="collapseTaller" class="collapse" data-parent="#accordion12">
+                      <div class="card-body" id="card-bodyAcor">
+                        <ul>
+                          <li>Teatro</li>
+                          <li>Danza</li>
+                          <li>Música</li>
+                          <li>Alebrijes y cartonería</li>
+                          <li>Dibujo</li>
+                          <li>Serigrafía</li>
+                          <li>Lectura o cuenta cuentos</li>
+                          <li>Juegos tradicionales</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTeatroIn">
+                        Teatro Infantil
+                      </a>
+                    </div>
+                    <div id="collapseTeatroIn" class="collapse" data-parent="#accordion12">
+                      <div class="card-body" id="card-bodyAcor">
+                         <ul>
+                          <li>Cuenta Cuentos</li>
+                          <li>Gira, gira Nicolas</li>
+                          <li>Una mancha más al tigre</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseAdolen">
+                        Adolecentes y Adultos
+                      </a>
+                    </div>
+                    <div id="collapseAdolen" class="collapse" data-parent="#accordion12">
+                      <div class="card-body" id="card-bodyAcor">
+                         <ul>
+                          <li>Un mundo al revés</li>
+                          <li>Los Perros</li>
+                          <li>1970 y la noche del Porvenir</li>
+                          <li>Fractales</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseLogros">
+                        Logros
+                      </a>
+                    </div>
+                    <div id="collapseLogros" class="collapse" data-parent="#accordion12">
+                      <div class="card-body" id="card-bodyAcor">
+                         <ul>
+                          <li>Gira por el Estado de Guerrero 2014-2015</li>
+                          <li>Producción del Festival Chilpancingo en Mío 2014-2015</li>
+                          <li>Muestra Estatal de teatro 2016 (Gira regional)</li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseConvenios">
+                        Convenios
+                      </a>
+                    </div>
+                    <div id="collapseConvenios" class="collapse" data-parent="#accordion12">
+                      <div class="card-body" id="card-bodyAcor">
+                         <ul>
+                          <li>Teatro</li>
+                          <li>Danza</li>
+                          <li>Música</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseWork">
+                        Trabajo con las instituciones
+                      </a>
+                    </div>
+                    <div id="collapseWork" class="collapse" data-parent="#accordion12">
+                      <div class="card-body" id="card-bodyAcor">
+                        <ul>
+                          <li>Teatro</li>
+                          <li>Danza</li>
+                          <li>Música</li>
+                          <li>Alebrijes y cartonería</li>
+                          <li>Dibujo</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="row my-4" id="col6">
-            <div class="col-6 text-justify">
-              <!--<h3 id="h3-small">¿QUÉ OFRECEMOS?</h3>-->
+          <div class="row my-4">
+            <div class="col-6 text-justify" id="col6">
               <div id="accordion1">
                   <div class="card">
                     <div class="card-header">
@@ -175,8 +382,7 @@
                 </div>
             </div>
 
-            <div class="col-6 text-justify">
-              <!--<h3 id="h3-small">¿QUÉ OFRECEMOS?</h3>-->
+            <div class="col-6 text-justify" id="col6">
               <div id="accordion2">
                   <div class="card">
                     <div class="card-header">
@@ -238,221 +444,10 @@
                 </div>
             </div>
           </div>     
-
-          <div class="row my-4" id="col12">
-            <div class="col-12 text-justify">
-              <!--<h3 id="h3-small">¿QUÉ OFRECEMOS?</h3>-->
-              <div id="accordion1">
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="card-link"  data-toggle="collapse" href="#collapseTaller">
-                        Talleres
-                      </a>
-                    </div>
-                    <div id="collapseTaller" class="collapse" data-parent="#accordion1">
-                      <div class="card-body" id="card-bodyAcor">
-                        <ul>
-                          <li>Teatro</li>
-                          <li>Danza</li>
-                          <li>Música</li>
-                          <li>Alebrijes y cartonería</li>
-                          <li>Dibujo</li>
-                          <li>Serigrafía</li>
-                          <li>Lectura o cuenta cuentos</li>
-                          <li>Juegos tradicionales</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTeatroIn">
-                        Teatro Infantil
-                      </a>
-                    </div>
-                    <div id="collapseTeatroIn" class="collapse" data-parent="#accordion1">
-                      <div class="card-body" id="card-bodyAcor">
-                         <ul>
-                          <li>Cuenta Cuentos</li>
-                          <li>Gira, gira Nicolas</li>
-                          <li>Una mancha más al tigre</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseAdolen">
-                        Adolecentes y Adultos
-                      </a>
-                    </div>
-                    <div id="collapseAdolen" class="collapse" data-parent="#accordion1">
-                      <div class="card-body" id="card-bodyAcor">
-                         <ul>
-                          <li>Un mundo al revés</li>
-                          <li>Los Perros</li>
-                          <li>1970 y la noche del Porvenir</li>
-                          <li>Fractales</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-12 text-justify">
-              <!--<h3 id="h3-small">¿QUÉ OFRECEMOS?</h3>-->
-              <div id="accordion2">
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseLogros">
-                        Logros
-                      </a>
-                    </div>
-                    <div id="collapseLogros" class="collapse" data-parent="#accordion2">
-                      <div class="card-body" id="card-bodyAcor">
-                         <ul>
-                          <li>Gira por el Estado de Guerrero 2014-2015</li>
-                          <li>Producción del Festival Chilpancingo en Mío 2014-2015</li>
-                          <li>Muestra Estatal de teatro 2016 (Gira regional)</li>
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseConvenios">
-                        Convenios
-                      </a>
-                    </div>
-                    <div id="collapseConvenios" class="collapse" data-parent="#accordion2">
-                      <div class="card-body" id="card-bodyAcor">
-                         <ul>
-                          <li>Teatro</li>
-                          <li>Danza</li>
-                          <li>Música</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header">
-                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseWork">
-                        Trabajo con las instituciones
-                      </a>
-                    </div>
-                    <div id="collapseWork" class="collapse" data-parent="#accordion2">
-                      <div class="card-body" id="card-bodyAcor">
-                        <ul>
-                          <li>Teatro</li>
-                          <li>Danza</li>
-                          <li>Música</li>
-                          <li>Alebrijes y cartonería</li>
-                          <li>Dibujo</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>    
         </div>
 
-        <div class="s-content__main_team">
-          <h2 class="mb-5" style="text-align: center;"><strong>Equipo</strong></h2>
-          <div class="card-deck">
-            <div class="card  border-info mb-3" style="max-width: 20rem;">
-              <img class="card-img-top"src="<?= PUBLIC_PATH ?>/img/ldlm.jpg" alt="Card image">
-              <div class="card-body">
-                <small class="text-muted">Lic.Artes</small>
-                <h4 class="card-title">Montserrat Hernandez Ramirez</h4>
-                <p class="card-text">Encargada del area comercial ndoajs  </p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
+        <?php include APP_PATH . '/views/pages/partials/team_list.view.php' ?>
 
-            <div class="card  border-info mb-3" style="max-width: 20rem;">
-              <img class="card-img-top" src="<?= PUBLIC_PATH ?>/img/ldlm.jpg" alt="Card image">
-              <div class="card-body">
-                <small class="text-muted">Lic.Artes</small>
-                <h4 class="card-title">Montserrat Hernandez Ramirez</h4>
-                <p class="card-text">Encargada del area comercial ndoajs  </p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-
-            <div class="card  border-info mb-3" style="max-width: 20rem;">
-              <img class="card-img-top" src="<?= PUBLIC_PATH ?>/img/ldlm.jpg" alt="Card image">
-              <div class="card-body">
-                <small class="text-muted">Lic.Artes</small>
-                <h4 class="card-title" >Montserrat Hernandez Ramirez</h4>
-                <p class="card-text">Encargada del area comercial ndoajs  </p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-
-            <div class="card  border-info mb-3" style="max-width: 20rem;">
-              <img class="card-img-top" src="<?= PUBLIC_PATH ?>/img/ldlm.jpg" alt="Card image">
-              <div class="card-body">
-                <small class="text-muted">Lic.Artes</small>
-                <h4 class="card-title" >Montserrat Hernandez Ramirez</h4>
-                <p class="card-text">Encargada del area comercial ndoajs  </p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-deck">
-            <div class="card  border-info mb-3" style="max-width: 20rem;">
-              <img class="card-img-top" src="<?= PUBLIC_PATH ?>/img/ldlm.jpg" alt="Card image">
-              <div class="card-body">
-                <small class="text-muted">Lic.Artes</small>
-                <h4 class="card-title" >Montserrat Hernandez Ramirez</h4>
-                <p class="card-text">Encargada del area comercial ndoajs  </p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-
-            <div class="card  border-info mb-3" style="max-width: 20rem;">
-              <img class="card-img-top" src="<?= PUBLIC_PATH ?>/img/ldlm.jpg" alt="Card image">
-              <div class="card-body">
-                <small class="text-muted">Lic.Artes</small>
-                <h4 class="card-title" >Montserrat Hernandez Ramirez</h4>
-                <p class="card-text">Encargada del area comercial ndoajs  </p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-
-            <div class="card  border-info mb-3" style="max-width: 20rem;">
-              <img class="card-img-top" src="<?= PUBLIC_PATH ?>/img/ldlm.jpg" alt="Card image">
-              <div class="card-body">
-                <small class="text-muted">Lic.Artes</small>
-                <h4 class="card-title" >Montserrat Hernandez Ramirez</h4>
-                <p class="card-text">Encargada del area comercial ndoajs  </p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-
-            <div class="card  border-info mb-3" style="max-width: 20rem;">
-              <img class="card-img-top" src="<?= PUBLIC_PATH ?>/img/ldlm.jpg" alt="Card image">
-              <div class="card-body">
-                <small class="text-muted">Lic.Artes</small>
-                <h4 class="card-title" >Montserrat Hernandez Ramirez</h4>
-                <p class="card-text">Encargada del area comercial ndoajs  </p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-          </div>  
-        </div>
       </div>
     </div>
   </div>

@@ -1,3 +1,6 @@
+<?php
+ $title = "Contacto";
+?>
 <?php include APP_PATH . '/views/partials/head.view.php' ?>
 <?php include APP_PATH . '/views/partials/header.view.php' ?>
 
@@ -7,6 +10,14 @@
             <?php if (isset($errorMessage)): ?>
                 <div class="alert alert-danger" role="alert">
                     <?= $errorMessage ?>                    
+                </div>
+            <?php endif; ?>
+        </div>
+
+        <div class="row">
+            <?php if (isset($message)): ?>
+                <div class="alert alert-success" role="alert">
+                    <?= $message ?>                    
                 </div>
             <?php endif; ?>
         </div>

@@ -1,49 +1,60 @@
-  <!-- Modal -->
-  <div class="modal fade" id="loginModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          Iniciar Sesión
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-          <form action="/action_page.php">
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
-  </div>
-  <div class="form-group form-check">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox"> Remember me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
- <!-- Footer  bg-dar"-->
-    <footer class="py-2" style="background-color: #a5a5a5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 order-md-2">
-                   Direccion: Francisco Granados No.80, Margarita Viguri, Chilpancingo de los Bravo, Gro. Cel: 747 110 6653 / 747 529 9868
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    Iniciar Sesión
+                    <button class="close" data-dismiss="modal" type="button">
+                        ×
+                    </button>
                 </div>
-                <div class="col-md-5 order-md-1">
-                  Contenido del sitio 2018-2019 De La Mancha A.C.
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">
+                                Usuario o correo electronico:
+                            </label>
+                            <input class="form-control" id="email" type="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">
+                                Contraseña:
+                            </label>
+                            <input class="form-control" id="pwd" type="password"/>
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">
+                                    Recordarme
+                                </input>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary" type="submit">
+                            Ingresar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  bg-dar"-->
+    <footer class="page-footer font-small teal py-2" style="background-color: #a5a5a5">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <!--<div class="col-md-7 order-md-2">-->
+                    <div class="col-md-5 mt-md-0 mt-1">
+                        <p>Contenido del sitio 2018-2019 De La Mancha A.C.
                     <a data-toggle="modal" data-target="#loginModal">
                         <i class="fa fa-sign-in-alt"></i>
-                    </a>
+                    </a></p>
+                   
+                </div>
+                 <hr class="clearfix w-100 d-md-none pb-3">
+                <!--<div class="col-md-5 order-md-1">-->
+                     <div class="col-md-7 mb-md-0 mb-2">
+                  <p><b>Direccion:</b> Francisco Granados No.80, Margarita Viguri, Chilpancingo de los Bravo, Gro. <b>Cel:</b> 747 110 6653 / 747 529 9868</p>
                  
                 </div>
                 <!--<p class=" col-4 m-0 text-left text-white">Contenido del sitio 2018-2019 De La Mancha A.C.
@@ -54,7 +65,11 @@
                 <p class=" col-1  m-0 text-center text-white"></p>
                
                 <p class="col-7 m-0 text-center text-white">Direccion: Alberto González Valle 12, Margarita Viguri, Chilpancingo de los Bravo, Gro. <br>Tel: 747 110 6653
-                </p>-->
+                </p>
+              
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>   -->
             </div>
         </div>
         <!-- /.container -->

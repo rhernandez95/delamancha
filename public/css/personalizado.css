@@ -1,66 +1,61 @@
 /* Sticky footer styles-------------------------------------------------- */
+
 html {
     position: relative;
     min-height: 100%;
 }
 body {
     /* Margin bottom by footer height   margin-bottom: 60px; */
-   
     padding-top: 54px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-* {box-sizing: border-box;}
-
+* {
+    box-sizing: border-box;
+}
 @media (min-width: 992px) {
     body {
-            padding-top: 56px;
-        }
+        padding-top: 56px;
     }
-
+}
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 60px;
+    /* Vertically center the text there */
     background-color: #f5f5f5;
 }
-
 .card-header {
     background-color: #17a2b8;
     text-align: center;
 }
-
 .card-header .card-link {
-   color:white;
+    color: white;
 }
-
-#container{
+#container {
     border-radius: 10px;
     background-color: #f2f2f2;
     padding: 20px;
     max-width: 100%;
 }
+#image {
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
-
-
-#image{
-    width: 90%; 
-    height: 90%; 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;"
 }
+#imgTeam {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
-#imgTeam{ 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;"
 }
-
 /* Custom page CSS-------------------------------------------------- */
+
 /* Not required for template or sticky footer method.
 
  @media screen and (max-width:760px){
@@ -72,96 +67,130 @@ body > .container {
     padding: 60px 15px 0;
 } */
 
-.error-messages{
-    color:red;
+.error-messages {
+    color: red;
 }
-
 .bg-nav {
     background-color: #ffc000 !important;
 }
 a .active {
     background-color: #000000;
 }
-
 p.lead {
     font-family: "metropolis-medium", sans-serif;
     font-size: calc(1em + 1vw);
     line-height: 1.2;
     margin-bottom: 3.6rem;
     color: #000000;
-    text-align:justify;
+    text-align: justify;
 }
-
-p.res{
+p.res {
     font-size: calc(.5em + 1vw);
-    
 }
-
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     #h3-small {
         font-size: calc(1em + .85vw);
     }
 }
-
-@media screen and (max-width: 480px) {
-    #col6{
-        display:none;
+@media only screen and (max-width: 568px) and (min-width: 480px) {
+    #col6 {
+        display: none;
     }
 }
-
-@media screen and (max-width: 568px) {
-    #col6{
-        display:none;
+@media only screen and (max-width: 480px) {
+    div#col12 {
+        display: block;
     }
 }
-
-@media screen and (max-width: 667px) {
-    #col6{
-        display:none;
+@media only screen and (max-width: 667px) and (min-width: 568px) {
+    #col6 {
+        display: none;
     }
 }
-
-@media screen and (max-width: 768px) {
-    #col6{
-        display:none;
+@media only screen and (max-width: 768px) and (min-width: 667px) {
+    #col6 {
+        display: none;
     }
 }
-
-@media screen and (max-width: 1024px) {
-    #col6{
-        display:none;
+@media only screen and (max-width: 768px) and (min-width: 667px) {
+    div#col12 {
+        display: block;
     }
 }
-
-
-@media screen and (max-width: 1280px) {
-    #col6{
-        display:none;
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    #col6 {
+        display: none;
     }
 }
-
-@media screen and (max-width: 1400px) {
-    #col12{
-        display: none ;
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    div#col12 {
+        display: block;
     }
 }
-
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1280px) {
+    #col6 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    div#col12 {
+        display: block;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    #col12 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    #col12 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1800px) {
+    #col12 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    #col12 {
+        display: none;
+    }
+}
+@media screen and (max-width: 2200px) {
+    #col12 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 2800px) {
+    #col12 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 4200px) {
+    #col12 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 5600px) {
+    #col12 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
     .s-content__main {
         padding-left: 4rem;
         padding-right: 4rem;
         font-size: calc(0.5em + 1vw);
     }
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
     .s-content__main {
         padding-left: 5rem;
         padding-right: 5rem;
         font-size: calc(0.5em + 1vw);
     }
 }
-
-
 .s-content__main {
     margin-top: 3rem;
     padding-left: 4rem;
@@ -169,10 +198,21 @@ p.res{
     text-align: justify;
     font-size: calc(1vh + 1vw);
 }
-
 .s-content__main_team {
-    margin-top: 3rem;
+    margin-top: .5rem;
     padding-left: 4rem;
     padding-right: 4rem;
     text-align: justify;
+}
+#cardMe {
+    width: 20rem;
+    margin-right: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+@media only screen and (max-width: 480px) {
+    #cardMe {
+        width: auto;
+        margin-right: .1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
 }

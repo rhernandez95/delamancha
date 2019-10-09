@@ -25,8 +25,8 @@ class Mail extends PHPMailer
         //$this->Debugoutput = new myPsr3Logger;
 
         //Ahora definimos gmail como servidor que aloja nuestro SMTP
-        $this->Host = 'smtp.gmail.com';
-        //$this->Host = 'smtp-mail.outlook.com';
+        //$this->Host = 'smtp.gmail.com';
+        $this->Host = 'smtp-mail.outlook.com';
         
         //El puerto será el 587 ya que usamos encriptación TLS
         $this->Port = 587;
@@ -39,10 +39,10 @@ class Mail extends PHPMailer
         $this->SMTPAuth = true;
         
         //Definimos la cuenta que vamos a usar. Dirección completa de la misma
-        $this->Username = "ramonhdez3195@gmail.com";
+        $this->Username = "squalo_hdez@live.com.mx";
         
         //Introducimos nuestra contraseña de gmail
-        $this->Password = "rhernandez95";
+        $this->Password = "kachirivasna";
        
         $this->Timeout=30;
 

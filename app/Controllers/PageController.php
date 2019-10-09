@@ -28,6 +28,11 @@ class PageController {
         $logger->info('Pagina de inicio cargada correctamente');   
 	}
 
+    public function indexDetalle()
+    {
+        View::render('pages/partials/index_detalle');        
+    }
+
 	public function about()
 	{
 		View::render('pages/nosotros');
@@ -40,7 +45,7 @@ class PageController {
             $email = trim($_POST['email']);
             $message = htmlentities(trim($_POST['message']));
             $captchaInput = trim($_POST['captcha']);
-            $inputs = compact('name', 'email', 'message', 'captcha');
+            $inputs = compact('name', 'email', 'message');
 
             if ($name == '') {
                 $this->contactWithError('El campo Nombre es obligatorio', $inputs);
@@ -66,9 +71,8 @@ class PageController {
             $mail->setFrom($email,$name);
 
             //Y, ahora sí, definimos el destinatario (dirección y, opcionalmente, nombre)
-            $mail->addAddress('setmont.93@gmail.com');
+            $mail->addAddress('ramon_hernandezr@stoconsulting.com');
             $mail->addCC('ramonhdez3195@gmail.com');
-            $mail->addCC('squalo_hdez@live.com.mx');
             $mail->addReplyTo($email);
           
 
@@ -83,6 +87,7 @@ class PageController {
             //Enviamos el correo
             if($mail->send()) {
                 View::render('pages/contacto');
+                $this->correoEnviado('El mensaje se ha enviado con exito.');
                 $mail->ClearAddresses();
             } else {
                 $this->contactWithError('El mensaje no pudo ser enviado.');
@@ -100,6 +105,9 @@ class PageController {
 
     }
 
+
+
+
     private function contactWithError($errorMessage, array $variables = [])
     {
         $captcha = new CaptchaBuilder;
@@ -110,6 +118,19 @@ class PageController {
         $variables['errorMessage'] = $errorMessage;
 
         View::render('pages/contacto', $variables);
+        exit;
+    }
+
+    private function correoEnviado($successMessage, array $variable = [])
+    {
+        $captcha = new CaptchaBuilder;
+        $captcha->build();
+        $_SESSION['phrase'] = $captcha->getPhrase();
+
+        $variable['captcha'] = $captcha;
+        $variable['successMessage'] = $successMessage;
+
+        View::render('pages/contacto', $variable);
         exit;
     }
 }
