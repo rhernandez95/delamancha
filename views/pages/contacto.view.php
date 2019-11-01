@@ -8,20 +8,16 @@
 	<div class="container" id="container">
         <div class="row">
             <?php if (isset($errorMessage)): ?>
-                <div class="alert alert-danger" role="alert">
+                <div class="alert alert-danger" role="alert" id="errorAlert">
                     <?= $errorMessage ?>                    
                 </div>
-            <?php endif; ?>
-        </div>
-
-        <div class="row">
-            <?php if (isset($message)): ?>
-                <div class="alert alert-success" role="alert">
-                    <?= $message ?>                    
+            <?php elseif(isset($successMessage)): ?>
+                <div class="alert alert-success" role="alert" id="successAlert">
+                    <?= $successMessage ?>                    
                 </div>
             <?php endif; ?>
         </div>
-
+        
         <div class="row">
             <div class="col-md-5 order-md-2 mb-4">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">

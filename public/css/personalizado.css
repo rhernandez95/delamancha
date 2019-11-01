@@ -216,3 +216,15 @@ p.res {
         margin-bottom: 1.5rem !important;
     }
 }
+
+#big-badge-dark {
+  color: #fff;
+  background-color: #000;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.25rem 1rem;
+  margin-bottom: 0.75rem;  
+  border-radius: 0.25rem;
+}

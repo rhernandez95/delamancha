@@ -87,12 +87,10 @@ class PageController {
             //Enviamos el correo
             if($mail->send()) {
                 View::render('pages/contacto');
-                $this->correoEnviado('El mensaje se ha enviado con exito.');
                 $mail->ClearAddresses();
             } else {
                 $this->contactWithError('El mensaje no pudo ser enviado.');
                     //Error: ' . $mail->ErrorInfo, $inputs
-
             }
 
         } else {
@@ -105,9 +103,6 @@ class PageController {
 
     }
 
-
-
-
     private function contactWithError($errorMessage, array $variables = [])
     {
         $captcha = new CaptchaBuilder;
@@ -118,19 +113,6 @@ class PageController {
         $variables['errorMessage'] = $errorMessage;
 
         View::render('pages/contacto', $variables);
-        exit;
-    }
-
-    private function correoEnviado($successMessage, array $variable = [])
-    {
-        $captcha = new CaptchaBuilder;
-        $captcha->build();
-        $_SESSION['phrase'] = $captcha->getPhrase();
-
-        $variable['captcha'] = $captcha;
-        $variable['successMessage'] = $successMessage;
-
-        View::render('pages/contacto', $variable);
         exit;
     }
 }

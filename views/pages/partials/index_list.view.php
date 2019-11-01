@@ -9,7 +9,7 @@
                     </div> 
                             
                     <div class="card" id="cardMe">
-                        <a href="#">
+                        <a href="<?= PUBLIC_PATH ?>/detalle">
                             <img src="img/fb2.jpg" class="card-img-top" alt="...">
                         </a>
                     </div>
