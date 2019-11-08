@@ -14,7 +14,8 @@
                 <img src="<?= PUBLIC_PATH ?>/img/carousel/notfound3.svg" class="img-fluid">
             </section>
 		</div>
-   		<?php include APP_PATH . '/views/cartelera/partials/cartelera_list.view.php' ?>
     </div>
+
+    <?php include APP_PATH . '/views/cartelera/partials/cartelera_list.view.php' ?>
 
 <?php include APP_PATH . '/views/partials/foot.view.php' ?>

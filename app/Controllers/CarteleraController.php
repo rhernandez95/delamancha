@@ -15,5 +15,21 @@ class CarteleraController {
         View::render('articles/index', compact('articles'));*/
         View::render('cartelera/index');
     }
+
+    public function show() {
+
+       /* $id = $_GET['id'] ?? '';
+        $article = Article::find($id);
+
+        if (!empty($article)) {
+            View::render('articles/show', compact('article'));
+
+        } else {
+            $this->index();
+        }*/
+        
+    	View::render('cartelera/partials/cartelera_detalle');
+    }
+
 }
 

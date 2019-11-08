@@ -227,4 +227,19 @@ p.res {
   padding: 0.25rem 1rem;
   margin-bottom: 0.75rem;  
   border-radius: 0.25rem;
+  width: auto;
+  margin-left: auto; 
+}
+
+.bg-obra {
+  background-color: #d4977e !important;
+}
+
+.card-header-obra {
+    background-color: #b57055;
+    text-align: center;
+}
+.card-header-obra .card-link {
+    color: white;
+}
 }
