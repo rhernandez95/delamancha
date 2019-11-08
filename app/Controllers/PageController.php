@@ -68,29 +68,33 @@ class PageController {
             }
 
             //Definimos el remitente (dirección y, opcionalmente, nombre)
-            $mail->setFrom($email,$name);
+            $mail->setFrom(DLM_MAIL['Username'],$name);
 
             //Y, ahora sí, definimos el destinatario (dirección y, opcionalmente, nombre)
-            $mail->addAddress('ramon_hernandezr@stoconsulting.com');
-            $mail->addCC('ramonhdez3195@gmail.com');
+            $mail->addAddress(DLM_MAIL['AddAddress']);
+            $mail->addCC(DLM_MAIL['AddCC']);
             $mail->addReplyTo($email);
           
 
             $mail->isHTML(true);
 
             //Definimos el tema del email
-            $mail->Subject = "De la Mancha: {$name} <{$email}>";
+            $mail->Subject = DLM_MAIL['Subject'] . "{$name} <{$email}>";
 
             //Para enviar un correo formateado en HTML lo cargamos con la siguiente función. Si no, puedes meterle directamente una cadena de texto.
             $mail->Body = nl2br($message);
 
             //Enviamos el correo
             if($mail->send()) {
+                $msg = 'Mensaje enviado! Gracias por contactarnos.';
+                $captcha = new CaptchaBuilder;
+                $captcha->build();
+                $_SESSION['phrase'] = $captcha->getPhrase();
+                View::render('pages/contacto', compact('captcha', 'msg'));
                 View::render('pages/contacto');
                 $mail->ClearAddresses();
             } else {
                 $this->contactWithError('El mensaje no pudo ser enviado.');
-                    //Error: ' . $mail->ErrorInfo, $inputs
             }
 
         } else {

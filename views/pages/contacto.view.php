@@ -11,11 +11,14 @@
                 <div class="alert alert-danger" role="alert" id="errorAlert">
                     <?= $errorMessage ?>                    
                 </div>
-            <?php elseif(isset($successMessage)): ?>
-                <div class="alert alert-success" role="alert" id="successAlert">
-                    <?= $successMessage ?>                    
-                </div>
             <?php endif; ?>
+
+            <?php if (!empty($msg)) {
+                echo "<div class='alert alert-success' role='alert' id='successAlert'> $msg </div>" . sleep(1);
+                 echo "Loop started!\n" . sleep(1);
+            }?>        
+
+            
         </div>
         
         <div class="row">

@@ -2,7 +2,7 @@
 
 namespace App\Libraries;
 
-//use App\Controllers\ArticleController;
+use App\Controllers\CarteleraController;
 use App\Libraries\View;
 
 class Route
@@ -14,7 +14,7 @@ class Route
             $controller = new $controller;
 
         } else {
-           $controller = new ArticleController;
+           $controller = new CarteleraController;
         }
 
         if (method_exists($controller, $action)) {
