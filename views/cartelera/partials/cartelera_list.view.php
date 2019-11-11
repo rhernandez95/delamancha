@@ -114,15 +114,28 @@
 			    </div>
 			    <hr>
 		      
+		     
+		      	
+		      
+		    <?php foreach ($carteleras as $cartelera): ?>
 		      	<div class="row">
 		      		<div class="col-md-3">
+		      			<a href="<?= PUBLIC_PATH . '/obra?id=' . $cartelera->id_obra ?>">
 		      			<img src="<?= PUBLIC_PATH ?>/img/carousel/notfound2.svg" class="img-fluid mb-2">
+		      			</a>
 			        </div>
 
 			        <div class="col-md-9">
 			        	<div class="row">
 			        		<div class="col-md-12">
-			        			<h4><a href="<?= PUBLIC_PATH ?>/obra" style="text-decoration:none; color:inherit;"> TITULO OBRA </a></h4>
+			        		<?php if (!$cartelera->obras->isEmpty()): ?>
+			        		<?php foreach ($cartelera->obras as $obra): ?>
+			        			<h4>
+			        				<a href="<?= PUBLIC_PATH . '/obra?id=' . $obra->id_obra ?>" style="text-decoration:none; color:inherit;"> <?= $obra->nombre . ' - ' . $obra->clasificaciones->nombre;  ?> 
+			        				</a>
+			        			</h4>
+                            <?php endforeach; ?>
+                        	<?php endif; ?>
 			        		</div>
 			        	</div>
 			        	
@@ -133,8 +146,12 @@
 			            			<div class="features-icons-icon d-flex mb-1">
 			              				<i class="fa fa-building m-auto fa-2x" aria-hidden="true"></i>
 			            			</div>
-			            			<h6><b>Fully Responsive</b></h6>
-			            			<p class="mb-0">This theme will look great on any device, no matter the size!</p>
+			            			<?php if (!$cartelera->lugares->isEmpty()): ?>
+			        				<?php foreach ($cartelera->lugares as $lugar): ?>
+			            			<h6><b> <?=  $lugar->nombre; ?></b></h6>
+			            			<p class="mb-0"><?=  $lugar->descripcion; ?></p>
+			            			<?php endforeach; ?>
+                        			<?php endif; ?>
 			          			</div>
 			        		</div>
 			        		
@@ -144,8 +161,12 @@
 					            	<div class="features-icons-icon d-flex mb-1">
 					             		<i class="fa fa-calendar-times m-auto fa-2x" aria-hidden="true"></i>
 					            	</div>
-					            	<h6><b>Bootstrap 4 Ready</b></h6>
+					            	<?php if (!$cartelera->fechas->isEmpty()): ?>
+			        				<?php foreach ($cartelera->fechas as $fecha): ?>
+					            	<h6><b><?=  $fecha->fecha .' ' . $fecha->hora; ?></b></h6>
 					            	<p class="mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+					            	<?php endforeach; ?>
+                        			<?php endif; ?>
 					          	</div>
 					        </div>
 			        		
@@ -163,6 +184,7 @@
 			        </div>    
 			    </div>
 			    <hr>
+			  <?php endforeach; ?>
 		    </div>
   		</section>
     </div>

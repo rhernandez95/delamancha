@@ -5,15 +5,15 @@ namespace App\Controllers;
 use App\Libraries\View;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
+use App\Models\Cartelera;
 
 class CarteleraController { 
     
     public function index()
     {
-        /*$articles = Article::all();
+        $carteleras = Cartelera::all();
 
-        View::render('articles/index', compact('articles'));*/
-        View::render('cartelera/index');
+        View::render('cartelera/index', compact('carteleras'));
     }
 
     public function show() {
