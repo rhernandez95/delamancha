@@ -25,8 +25,8 @@ class PageController {
 
         /*Grabar entras de log, repertir esta linea cada vez que
         necesitamos agregar una entrada al log*/
-        $logger->info('Pagina de inicio cargada correctamente');   
-	}
+        $logger->info('Pagina de inicio cargada correctamente');
+    }
 
     public function indexDetalle()
     {
