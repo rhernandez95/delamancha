@@ -3,7 +3,7 @@
 ?>
 <?php include APP_PATH . '/views/partials/head.view.php' ?>
 <?php include APP_PATH . '/views/partials/header.view.php' ?>
-<?php include APP_PATH . '/views/partials/carousel.view.php'?>
+<?php include APP_PATH . '/views/partials/carousel.view.php' ?>
 
     <!-- Contenedor principal para el body-->
     <div class="container my-4 " style="text-align: justify-all;" >

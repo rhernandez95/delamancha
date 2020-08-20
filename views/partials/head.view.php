@@ -16,8 +16,6 @@
     <!-- Custom styles for this template -->
     <link href="<?= PUBLIC_PATH ?>/css/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
     
-
-
 </head>
 
 <body>

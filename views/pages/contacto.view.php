@@ -1,6 +1,7 @@
 <?php
  $title = "Contacto";
 ?>
+
 <?php include APP_PATH . '/views/partials/head.view.php' ?>
 <?php include APP_PATH . '/views/partials/header.view.php' ?>
 
@@ -16,11 +17,9 @@
             <?php if (!empty($msg)) {
                 echo "<div class='alert alert-success' role='alert' id='successAlert'> $msg </div>" . sleep(1);
                  echo "Loop started!\n" . sleep(1);
-            }?>        
-
-            
+            }?>
         </div>
-        
+
         <div class="row">
             <div class="col-md-5 order-md-2 mb-4">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -33,7 +32,7 @@
                             <h6 class="my-0"><strong>Cel.</strong></h6>
                         </div>
                         
-                        <span class="text-muted"><a href="https://wa.me/527561055248">747-110-6653</a> / <a href="https://wa.me/527561055248">747-529-9868</a></span>
+                        <span class="text-muted"><a href="https://wa.me/527471106653"  target="_blank">747-110-6653</a> / <a href="https://wa.me/527475299868"  target="_blank">747-529-9868</a></span>
                     
                     </li>
 
@@ -41,7 +40,7 @@
                         <div>
                             <h6 class="my-0"><strong>E-mail</strong></h6>
                         </div>
-                        <a href="https://wa.me/527561055248">
+                        <a href="mailto:delamanchaa.c@gmail.com?Subject=Interesado%20en%20el%20grupo">
                             <span class="text-muted">delamanchaa.c@gmail.com</span>
                         </a>
                     </li>
@@ -50,7 +49,7 @@
                         <div>
                             <h6 class="my-0"><strong>Facebook</strong></h6>
                         </div>
-                        <a href="https://wa.me/527561055248">
+                        <a href="https://www.facebook.com/delamancha.grupo"  target="_blank">
                             <span class="text-muted">Miguel de Cervantes Saavedra</span>
                         </a>
                     </li>
@@ -59,7 +58,7 @@
                         <div>
                             <h6 class="my-0"><strong>Fan Page</strong></h6>
                         </div>
-                        <a href="https://wa.me/527561055248">
+                        <a href="https://www.facebook.com/QUIJOTE23/" target="_blank">
                             <span class="text-muted">Grupo Cultural De la Mancha A.C.</span>
                         </a>
                     </li>

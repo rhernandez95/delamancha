@@ -13,8 +13,7 @@
     <title>404 - De la Mancha</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<script src="js/bootstrap.js"></script>
     <script src="js/jquery.js"></script>
@@ -55,9 +54,9 @@
                     	</a>
                         
                     	<a href="https://wa.me/527561055248" class="btn btn-danger btn-lg my-2">
-                        	<span class="fa fa-whatsapp"></span> Contactar a Soporte 
+							<span class="fa fa-whatsapp"></span> Contactar a Soporte 
                     	</a>
-
+                       
                         <a href="mailto:squalo_hdez@live.com?subject = Feedback&body = Message" class="btn btn-danger btn-lg">
                             <span class="fa fa-envelope"></span> Contactar a Soporte 
                         </a>
