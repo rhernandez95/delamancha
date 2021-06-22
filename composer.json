@@ -18,7 +18,7 @@
     "require": {
 		"php": ">=7.0.0",
         "illuminate/database": "5.8.19",
-		"phpmailer/phpmailer": "6.0.7",
+		"phpmailer/phpmailer": "6.5.0",
 		"gregwar/captcha": "1.1.7",
         "psr/log": "^1.1",
         "monolog/monolog": "^1.24"
